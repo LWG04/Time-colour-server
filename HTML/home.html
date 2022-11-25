@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="style.css">
+    <script src="confetti.js"></script>
+    <script src="main.js"></script> -->
+    <!-- <meta http-equiv="refresh" content="5; URL=./time/index.html" /> -->
+</head>
+<body>
+    <h1 class="heading">Home</h1>
+    <div class="container">
+        <!-- <a onclick='window.history.replaceState(null, null, "?time"); get_page();'><p>Time</p></a> -->
+        <a onclick='window.history.replaceState(null, null, "?time");get_page();'><p>Time</p></a>
+        <a onclick='window.history.replaceState(null, null, "?color"); get_page();'><p>Color</p></a>
+        <a onclick='window.history.replaceState(null, null, "?rainbow"); get_page();'><p>Rainbow</p></a>
+        <a onclick='window.history.replaceState(null, null, "?cat"); get_page();'><p>Cat</p></a>
+        <a onclick='window.history.replaceState(null, null, "?dog"); get_page();'><p>Dog</p></a>
+        <!-- <a onclick="window.location.href='./old/'"><p>Old</p></a> -->
+    </div>
+    <div id="notification" onclick="hide_notification();">
+        <p>Press insert to toggle confetti</br>Do NOT use the back and forward navigation button as they do not work. Please use home on the keybaord to navigate back to the home screen</p>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- Not automatically adjusting font size -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <script src="time.js"></script>
+    <script src="confetti.js"></script>
+    <link rel="stylesheet" href="time.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <noscript><p class="time">Please enable javascript to use this page</p></noscript>
+    <main>
+        <p class="time blur" id="time"></p>
+        <p class="time blur" id="count">0</p>
+        <input onmouseover="mouseStatus(true);" onmouseout="mouseStatus(false);" oninput="writenum();" type="number" class="blur" id="length" value="0" min="0" palceholder="Enter time in seconds">
+        <button class="start blur" id="start" onclick="stopConfetti();start();">Start</button>
+        <button class="stop blur" id="stop" onclick="stop();slowConfetti();">Reset</button>
+    </main>
+<!-- <div id="help"> Removed due to XMLHttpRequest not working with this popup
+    <h1>Help</h1>
+    <ul>
+        <li>Click insert to toggle confetti</li>
+        <li>Click pause to hide all text other than this and confetti</li>
+        <li>Click end to gradually stop confetti</li>
+    </ul>
+</div> -->
+</body>
+</html>

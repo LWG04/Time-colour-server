@@ -1,0 +1,4 @@
+cat();
+startConfetti();
+
+onclick = cat;

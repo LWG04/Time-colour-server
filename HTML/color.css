@@ -1,0 +1,150 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hexvalue {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vh;
+    margin: 0;
+}
+
+#copied {
+    font-size: 3vh;
+    padding: 0 2vw;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #ffffff5d;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#back {
+    font-size: 30px;
+    position: absolute;
+    top: calc(2% + 200px);
+    left: 2%;
+    height: 40px;
+    width: 140px;
+    padding: 0 2vw;
+    background-color: #ffffff5d;
+}
+
+#back:hover {
+    background-color: #ffffffaa;
+    transition: background-color 0.2s;
+}
+
+#forward {
+    font-size: 30px;
+    position: absolute;
+    top: calc(2% + 200px);
+    left: calc(2% + 150px);
+    height: 40px;
+    width: 140px;
+    padding: 0 2vw;
+    background-color: #ffffff5d;
+}
+
+#forward:hover {
+    background-color: #ffffffaa;
+    transition: background-color 0.2s;
+}
+
+#save {
+    font-size: 25px;
+    position: absolute;
+    top: calc(2% + 250px);
+    left: 2%;
+    height: 40px;
+    padding: 0 2vw;
+    background-color: #ffffff5d;
+}
+
+#save:hover {
+    background-color: #ffffffaa;
+    transition: background-color 0.2s;
+}
+
+.full {
+    width: 290px;
+}
+
+button {
+    position: absolute;
+    left: 2%;
+    background-color: #ffffff5d;
+    border: none;
+    padding: 0 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ffffffaa;
+    transition: background-color 0.2s;
+}
+
+#newcol {
+    top: 2%;
+    height: 40px;
+}
+
+#copy {
+    top: calc(2% + 50px);
+    height: 40px;
+}
+
+input {
+    position: absolute;
+    left: 2%;
+    background-color: #ffffff5d;
+    color: black;
+    border: none;
+    padding: 0 10px;
+    font-size: 25px;
+    transition: background-color 0.2s;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+}
+
+input:hover {
+    background-color: #ffffffaa;
+    transition: background-color 0.2s;
+}
+
+input::placeholder {
+    color: rgb(46, 46, 46);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#r {
+    top: calc(2% + 100px);
+}
+
+#g {
+    top: calc(2% + 100px);
+    left: calc(2% + 100px);
+}
+
+#b {
+    top: calc(2% + 100px);
+    left: calc(2% + 200px);
+}
+
+#hex {
+    position: absolute;
+    top: calc(2% + 150px);
+    width: 270px;
+}

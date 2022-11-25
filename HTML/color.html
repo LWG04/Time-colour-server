@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color</title>
+    
+    <script>
+        var rhover = false
+var ghover = false
+var bhover = false
+const changeval = 10
+const colours = []
+var tail = 0
+var pointer = 0
+
+
+    </script>
+ 
+</head>
+<body>
+
+    <p id="hexvalue"></p>
+    <button class="full" id="newcol" onclick='color();'>Random colour</button>
+    <button class="full" id="copy" onclick="copy();">Copy hex</button>
+    <input onmouseover="mouseover('r', true);" onmouseout="mouseover('r', false)" type="number" min="0" max="255" oninput="checkrgbnum('r');" id="r" placeholder="R" value="">
+    <input onmouseover="mouseover('g', true);" onmouseout="mouseover('g', false)" type="number" min="0" max="255" oninput="checkrgbnum('g');" id="g" placeholder="G" value="">
+    <input onmouseover="mouseover('b', true);" onmouseout="mouseover('b', false)" type="number" min="0" max="255" oninput="checkrgbnum('b');" id="b" placeholder="B" value="">
+    <input type="text" oninput="checkhexnum();" id="hex" placeholder="HEX" value="#">
+    <button id="back" onclick="back();">←</button>
+    <button id="forward" onclick="forward();">→</button>
+    <button class="full" id="save" onclick="save();">Save</button>
+    <div id="copied">
+        <p><strong>Copied!</strong></p>
+    </div>
+</body>
+</html>
